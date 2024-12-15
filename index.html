@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cybersecurity Challenges Survey</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Cybersecurity Challenges Survey</h1>
+
+        <div class="section-intro">
+            <p>Thank you for your interest in this survey. Your participation is voluntary, and your responses will contribute to the result of Cybersecurity Challenges Research.</p>
+            <p>In accordance with <strong>Republic Act No. 10173</strong> or the <strong>Data Privacy Act of 2012</strong>, we ensure that:</p>
+            <ul>
+                <li>All information you provide will remain confidential and used only for the purpose of this survey.</li>
+                <li>Your responses will be stored securely and accessed only by authorized personnel.</li>
+            </ul>
+            <p>By proceeding, you confirm that:</p>
+            <ol>
+                <li>You have read and understood the purpose of this survey.</li>
+                <li>You voluntarily agree to participate.</li>
+                <li>You consent to the collection and use of your data as described.</li>
+            </ol>
+            <p>Thank you for your time and valuable input!</p>
+            <p>Created by: <strong>Antoque, Geverola, Lor</strong></p>
+        </div>
+
+        <form action="process-form.php" method="post">
+            <div class="form-section">
+                <div class="section-title">Personal Information</div>
+                <div class="form-control">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-control">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                </div>
+                <div class="form-control">
+                    <div class="section-title">Gender *</div>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="gender" value="Male" required> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="Female" required> Female
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <fieldset class="survey-section">
+                <legend>Survey Questionnaire</legend>
+                <div class="form-control">
+                    <div class="section-title">Password Security *</div>
+                    <label>
+                        <input type="radio" name="question1" value="Always" required> Always
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value="Never" required> Never
+                    </label>
+                </div>
+
+                <div class="form-control">
+                    <div class="section-title">Password Sharing *</div>
+                    <label>
+                        <input type="radio" name="question2" value="Always" required> Always
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value="Never" required> Never
+                    </label>
+                </div>
+
+                <div class="form-control">
+                    <div class="section-title">Phishing Awareness *</div>
+                    <label>
+                        <input type="radio" name="question3" value="Always" required> Always
+                    </label>
+                    <label>
+                        <input type="radio" name="question3" value="Never" required> Never
+                    </label>
+                </div>
+
+                <div class="form-control">
+                    <div class="section-title">Software Updates *</div>
+                    <label>
+                        <input type="radio" name="question4" value="Always" required> Always
+                    </label>
+                    <label>
+                        <input type="radio" name="question4" value="Never" required> Never
+                    </label>
+                </div>
+
+                <div class="form-control">
+                    <div class="section-title">Public Wi-Fi Usage *</div>
+                    <label>
+                        <input type="radio" name="question5" value="Always" required> Always
+                    </label>
+                    <label>
+                        <input type="radio" name="question5" value="Never" required> Never
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="button-group">
+                <button type="submit" name="submit" value="submit">Submit</button>
+                <button type="reset" name="reset" value="reset">
+                    Clear Answers
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

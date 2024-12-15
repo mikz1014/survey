@@ -1,0 +1,259 @@
+/* General Reset */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f8fb; /* Soft blue background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 90%;
+  width: 500px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background-color: #fff;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px; /* Add space below heading */
+  font-size: 24px;
+  color: #0056b3;
+  text-transform: uppercase;
+}
+
+/* Section */
+.section {
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px; /* Add space below section title */
+  color: #0077cc;
+  text-align: left;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+/* Radio Buttons */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-button {
+  margin-bottom: 5px;
+}
+
+.radio-group label {
+  cursor: pointer;
+}
+
+.radio-button input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Form Controls */
+.form-control {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-control input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 8px;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+.container ul, 
+.container ol {
+  padding-left: 1em;
+  line-height: 1.5;
+}
+
+.container ul li {
+  list-style-type: disc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Buttons Container */
+button {
+  background-color: #0077cc;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  margin: 10px auto;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #003d80;
+}
+
+button[type="reset"] {
+  background-color: #e63946; /* Red for the reset button */
+}
+
+button[type="reset"]:hover {
+  background-color: #b02a37;
+}
+
+button[type="reset"]:active {
+  background-color: #7a1d26;
+}
+
+/* Center Buttons */
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Responsive Design for Buttons */
+@media (max-width: 768px) {
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f0f0f0; /* Matching light blue for table background */
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #0077cc; /* Darker blue for table header */
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Style for paragraphs */
+p {
+  text-align: justify; /* Justify text for better readability */
+  line-height: 1.5; /* Add space between lines */
+  margin-bottom: 15px; /* Add space below paragraphs */
+}
+
+/* Style for strong tags */
+strong {
+  font-weight: bold;
+}
+
+/* Additional Styling */
+.container ul, 
+.container ol {
+  padding-left: 1em;
+  line-height: 1.5;
+}
+
+.container ul li {
+  list-style-type: disc;
+}
